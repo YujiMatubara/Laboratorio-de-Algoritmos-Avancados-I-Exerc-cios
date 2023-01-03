@@ -1,1 +1,1 @@
-Exercícios de programação para a disciplina SCC0210 Laboratório de Algoritmos Avançados I 
+Exercícios de programação para a disciplina de Laboratório de Algoritmos Avançados I
