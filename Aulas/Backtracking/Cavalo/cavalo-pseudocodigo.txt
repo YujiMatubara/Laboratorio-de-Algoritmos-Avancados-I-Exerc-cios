@@ -1,0 +1,36 @@
+//isto é um pseudo código
+
+#include <iostream>
+
+using namespace std;
+
+#define N 8
+
+bool passeio (tab, int x, int y, i)
+{   
+    //encontrei a solução
+    if (i == N * N)
+    {
+        return true;
+    }
+    
+    //procura nos próximos estados
+        //checa se o estado é valido
+            //marca como visitado
+            //recursão
+            //desfaz o visitado
+            
+    /* 
+     * Complexidade: O(N^n*m)
+     * N -> possibilidade de movimentos
+     * n -> altura do tabuleiro
+     * m -> largura do tabuleiro
+     */
+}
+
+int main(int argc, char const *argv[])
+{
+    passeio(tab, x1, y1, 0);
+
+    return 0;
+}

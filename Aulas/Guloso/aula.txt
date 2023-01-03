@@ -1,0 +1,72 @@
+Job Sequence  Problem:
+
+São problemas de maximização ou minimização de custo
+
+Job     Deadline    custo
+a       4           20
+b       2           30
+c       6           20
+d       1           90
+e       1           20
+f       2           30
+
+________________________________________________________________________________________
+Solução:
+Ordenar por custo
+
+Job     Deadline    custo
+d       1           90
+b       2           30
+f       2           30
+a       4           20
+c       6           20
+e       1           20
+
+então escolheremos sempre pelo maior custo, e colocaremos o mais longe possível:
+_ _ _ _ _ _
+d _ _ _ _ _
+d b _ _ _ _
+d b _ a _ _
+d b _ a _ c
+
+solução: {d, b, a, c}
+
+________________________________________________________________________________________
+Algoritmo:
+
+n = 5
+
+for (i = 0 até n - 1 no vetor ordenado descrescentemente pelo lucro)
+for (k = min(n, deadline) - 1, k <= 0, k--)
+{
+    if (posição k está livre)
+    {
+        tarefas[k] = job[i]
+    }
+}
+
+________________________________________________________________________________________
+Alguns exercícios
+
+Vetor = {10, 7, 3, 5, 8, 2, 9}      n = 7       k = 3
+
+1) Encontre o maior e o menor valor no vetor
+    Força Bruta(unica opção): Percorre o vetor pegando o maior e o menor >> O(n)
+
+2) Encontre o k-ésimo menor valor no vetor
+    Força Bruta: faça k vezes: percorre o vetor e pega o menor e substitua por MAX_INT >> O(n²)
+    Guloso: ordena, e pega o k-ésimo valor >> O(n logn)
+            crie um vetor de tamanho k e percorra colocando os menores no vetor em ordem decrescente >> O(n)
+
+3) Encontre o maior G tal que G = |x - y|, onde x e y são elementos do vetor
+    Força Bruta: compara todos os elementos entre si >> O(n²)
+    Guloso: ordena, e seleciona maior e menor >> O(n logn)
+            busca no vetor o maior e menor >> O(n)
+
+4) Encontre a maior sequencia crescente no vetor
+    Não é Guloso
+
+________________________________________________________________________________________
+O algoritmo guloso nunca volta atrás nas suas escolhas.
+
+parei em 1h30

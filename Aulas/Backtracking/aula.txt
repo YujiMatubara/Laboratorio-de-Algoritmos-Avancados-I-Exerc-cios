@@ -1,0 +1,2 @@
+no backing tracking, depois do retorno recursivo voce desfaz o que foi feito
+nao entendi.

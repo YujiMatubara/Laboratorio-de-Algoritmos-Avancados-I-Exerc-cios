@@ -1,0 +1,57 @@
+Set:
+conjunto
+implementado com árvore rubro-negra
+#include <set>
+set<int> s;
+s.insert();
+set<int>::iterator i;
+i.begin()
+i.end();
+
+Vector:
+#include <vector>
+vector<int> v;  //não precisam de tamanho
+v.push_back();
+v.pop();
+v.size();
+vector<int>::iterator i;
+for (int i = vet.begin(); i != vet.end(); i++)
+
+Fila:
+#include <pqueue>
+queue<int> q;
+q.size();
+q.empty();
+q.front();
+q.back();
+q.push();
+q.pop();
+
+Pilha:
+#include <stack>
+stack<int> s;
+s.size();
+s.top();
+s.push();
+s.pop();
+
+Deque:
+#include <deque>
+deque<int> d;
+d.size();
+d.empty();
+d.front();
+d.back();
+d.push_front();
+d.push_back();
+
+Fila de Prioridade:
+O(log n)
+#include <priority_queue> pq;
+#include <priority_queue, greater> pq;
+pq.size();
+pq.empty();
+pq.front();
+pq.back();
+pq.push();
+pq.pop();

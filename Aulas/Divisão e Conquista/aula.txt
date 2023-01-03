@@ -1,0 +1,11 @@
+seja um vetor: v = {-2, -3, 1, 5, -3, 6, 7, -2, -6, 10}
+escreva um programa que retorne a maior soma de um sub-vetor de v
+
+1) força bruta
+fazer todas as combinações
+O(n²)
+
+2) divisão e conquista
+O(n logn)
+
+3) dá para fazer em O(n)
